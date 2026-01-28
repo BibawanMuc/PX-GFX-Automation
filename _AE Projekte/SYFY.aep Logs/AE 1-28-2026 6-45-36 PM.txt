@@ -1,0 +1,22 @@
+Adobe After Effects v26.0 Windows 64 render log for project “SYFY.aep”
+
+Rendering started on 1/28/2026 at 6:45:36 PM
+
+  1/28/2026 6:45:36 PM: Starting composition “SYFY_MEIN_TRAILER_HEUTE 1212”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\PX-GFX-Automation\_Renderings\SYFY_MEIN_TRAILER_HEUTE 1212.mp4    1/28/2026 6:45:47 PM: Finished composition “SYFY_MEIN_TRAILER_HEUTE 1212”.
+
+
+  1/28/2026 6:45:47 PM: Starting composition “SYFY_MEIN_TRAILER_DONNERSTAG 1212”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\PX-GFX-Automation\_Renderings\SYFY_MEIN_TRAILER_DONNERSTAG 1212.mp4    1/28/2026 6:45:57 PM: Finished composition “SYFY_MEIN_TRAILER_DONNERSTAG 1212”.
+
+
+  1/28/2026 6:45:57 PM: Starting composition “SYFY_MEIN_TRAILER_JETZT”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\PX-GFX-Automation\_Renderings\SYFY_MEIN_TRAILER_JETZT.mp4    1/28/2026 6:46:09 PM: Finished composition “SYFY_MEIN_TRAILER_JETZT”.
+
+
+  Total Time Elapsed: 32 Seconds
+Log closed on 1/28/2026 at 6:46:09 PM
+

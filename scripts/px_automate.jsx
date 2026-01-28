@@ -198,7 +198,18 @@
             // --- DEEP DEBUG LOGGING ---
             function logToDisk(msg) {
                 try {
-                    var logFile = new File("d:/ae_script_debug.txt");
+                    var logPath = "d:/ae_script_debug.txt"; // Fallback
+
+                    if (typeof GLOBAL_DASHBOARD_PATH !== 'undefined' && GLOBAL_DASHBOARD_PATH) {
+                        logPath = GLOBAL_DASHBOARD_PATH + "/tmp/ae_script_debug.txt";
+                    } else if (app.project.file) {
+                        // Attempt to find tmp folder relative to project
+                        var projectFolder = app.project.file.parent;
+                        var dashboardFolder = projectFolder.parent;
+                        logPath = dashboardFolder.fsName + "/tmp/ae_script_debug.txt";
+                    }
+
+                    var logFile = new File(logPath);
                     logFile.open("a");
                     var now = new Date();
                     logFile.writeln(now.toTimeString() + ": " + msg);

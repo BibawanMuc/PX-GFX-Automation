@@ -13,6 +13,7 @@ logging.basicConfig(
     format='%(asctime)s - %(message)s'
 )
 
+
 def main():
     logging.info("---------------------------------------------------")
     logging.info("Launcher started (Root Copy Strategy).")
@@ -23,6 +24,20 @@ def main():
         logging.error(msg)
         sys.exit(1)
 
+    # Define status file
+    dashboard_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    status_file = os.path.join(dashboard_dir, 'tmp', 'system_status.json')
+    
+    def update_status(status, msg=""):
+        try:
+            import json
+            with open(status_file, 'w') as f:
+                json.dump({"status": status, "message": msg, "timestamp": time.time()}, f)
+        except Exception as e:
+            logging.error(f"Failed to update status: {e}")
+
+    update_status("starting", "Initializing Launcher...")
+
     ae_binary = sys.argv[1]
     project_path = sys.argv[2]
     original_script_path = sys.argv[3]
@@ -32,10 +47,6 @@ def main():
     logging.info(f"Original Script: {original_script_path}")
 
     # FORCE PATH SIMPLIFICATION
-    # AE is failing on the complex path "d:\PX KI Event...".
-    # We copying the script to d:\_temp_exec_TIMESTAMP.jsx to mimic the working "simple.jsx" test.
-    # We use a unique name to avoid file-lock collisions between runs.
-    
     timestamp = int(time.time())
     temp_script_path = fr"d:\_temp_exec_{timestamp}.jsx"
     
@@ -44,49 +55,65 @@ def main():
         logging.info(f"Copied script to SAFE path: {temp_script_path}")
     except Exception as e:
         logging.error(f"Failed to copy script to temp path: {e}")
+        update_status("error", f"Script copy failed: {e}")
         sys.exit(1)
 
-    # 0. CLEANUP: Ensure no zombie AE processes are running
-    # This prevents the new instance from messaging an old/closing instance.
+    # 0. CLEANUP
     logging.info("Step 0: Cleaning up old AfterFX processes...")
     try:
         subprocess.run(["taskkill", "/F", "/IM", "AfterFX.exe"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        time.sleep(2) # Give Windows a moment to release file locks
+        time.sleep(2)
         logging.info("Old AfterFX processes killed (if any).")
     except Exception:
         pass
 
     # 1. Launch After Effects with Project
     logging.info("Step 1: Launching After Effects...")
+    ae_proc = None
     try:
-        # Note: We launch DETACHED so we don't hold the process open
-        proc = subprocess.Popen([ae_binary, "-project", project_path])
-        logging.info(f"AE launched with PID: {proc.pid}")
+        # Launch using Popen and KEEP handle
+        ae_proc = subprocess.Popen([ae_binary, "-project", project_path])
+        logging.info(f"AE launched with PID: {ae_proc.pid}")
+        update_status("running", "After Effects is running...")
     except Exception as e:
         logging.error(f"Failed to launch AE: {e}")
+        update_status("error", f"AE Launch failed: {e}")
+        sys.exit(1)
 
     # 2. Wait for initialization
-    # Reduced to 30s as per user request (was 35s)
     logging.info("Step 2: Waiting 30 seconds for AE to initialize...")
     time.sleep(30)
 
-    # 3. Trigger Script via Direct Popen using TEMP PATH
+    # 3. Trigger Script
     logging.info(f"Step 3: Triggering script...")
-    
     ae_dir = os.path.dirname(ae_binary)
-    
-    # Use the TEMP path
     cmd = [ae_binary, "-r", temp_script_path]
-    logging.info(f"Command: {cmd}")
-    logging.info(f"CWD: {ae_dir}")
     
     try:
-        proc = subprocess.Popen(cmd, cwd=ae_dir)
-        logging.info(f"Trigger process launched with PID: {proc.pid}")
+        # This triggers the script in the EXISTING process
+        subprocess.Popen(cmd, cwd=ae_dir)
         logging.info("Script sent to After Effects.")
+        update_status("rendering", "Script execution started...")
     except Exception as e:
         logging.error(f"Failed to trigger script: {e}")
-        sys.exit(1)
+        # Don't exit, AE is still running
+    
+    # 4. MONITOR AND WAIT
+    logging.info("Step 4: Waiting for After Effects to close...")
+    if ae_proc:
+        try:
+            ae_proc.wait() # BLOCKS until AE quits
+            logging.info("After Effects has closed.")
+            update_status("stopped", "Render Session Finished")
+        except Exception as e:
+            logging.error(f"Error waiting for AE: {e}")
+    
+    # Cleanup temp script
+    try:
+        if os.path.exists(temp_script_path):
+            os.remove(temp_script_path)
+    except:
+        pass
 
 if __name__ == "__main__":
     main()
