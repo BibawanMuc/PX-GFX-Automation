@@ -49,9 +49,8 @@ export async function POST(request: Request) {
 
         const fileContent = `${header}\n${rows.join('\n')}`
 
-        // define SAFE PATHS using the Junction Link
-        // We now point to dashboard folder
-        const SAFE_BASE = "d:\\PX KI Event\\PROJECT\\CODE\\GFX_LINK\\CODE3\\dashboard"
+        // define SAFE PATHS using process.cwd() (Dynamic System Path)
+        const SAFE_BASE = process.cwd()
 
         console.log("Using SAFE_BASE:", SAFE_BASE)
         console.log(`Processing Batch of ${jobs.length} jobs. IDs:`, jobIds)
@@ -75,6 +74,7 @@ export async function POST(request: Request) {
         const escapedScriptPath = scriptPath.replace(/\\/g, '/')
 
         const wrapperContent = `var GLOBAL_JOB_FILE = "${escapedTsvPath}";
+var GLOBAL_DASHBOARD_PATH = "${SAFE_BASE.replace(/\\/g, '/')}";
 // @include "${escapedScriptPath}"
 `
         const wrapperPath = `${SAFE_BASE}\\tmp\\run_batch_${mainJobId}.jsx`
@@ -84,11 +84,11 @@ export async function POST(request: Request) {
         const aePath = process.env.AE_BINARY_PATH || "C:\\Program Files\\Adobe\\Adobe After Effects 2026\\Support Files\\AfterFX.exe"
 
         // Use the new relative location for the project file
-        // d:\PX KI Event\PROJECT\CODE\260127 GFX  Automations\CODE3\dashboard\_AE Projekte\SYFY.aep
-        const projectPath = `${SAFE_BASE}\\_AE Projekte\\SYFY.aep`
+        // dashboard/_AE Projekte/SYFY.aep
+        const projectPath = path.join(SAFE_BASE, '_AE Projekte', 'SYFY.aep')
 
         // Launcher is now in dashboard/scripts
-        const launcherPath = `${SAFE_BASE}\\scripts\\launcher.py`
+        const launcherPath = path.join(SAFE_BASE, 'scripts', 'launcher.py')
 
         console.log("Spawning Python Launcher...")
         console.log("Script:", launcherPath)

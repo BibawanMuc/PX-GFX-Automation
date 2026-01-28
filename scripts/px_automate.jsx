@@ -168,10 +168,21 @@
                 // Project: .../dashboard/_AE Projekte/SYFY.aep
                 // Render:  .../dashboard/_Renderings
 
-                if (app.project.file) {
-                    var projectFolder = app.project.file.parent; // _AE Projekte
-                    var dashboardFolder = projectFolder.parent;  // dashboard
-                    var renderFolder = new Folder(dashboardFolder.fsName + "/_Renderings");
+
+                var renderFolder = null;
+
+                // 1. Try Global Path (from API)
+                if (typeof GLOBAL_DASHBOARD_PATH !== 'undefined' && GLOBAL_DASHBOARD_PATH) {
+                    renderFolder = new Folder(GLOBAL_DASHBOARD_PATH + "/_Renderings");
+                }
+                // 2. Fallback to Relative Path (if project saved)
+                else if (app.project.file) {
+                    var projectFolder = app.project.file.parent;
+                    var dashboardFolder = projectFolder.parent;
+                    renderFolder = new Folder(dashboardFolder.fsName + "/_Renderings");
+                }
+
+                if (renderFolder) {
 
                     if (!renderFolder.exists) renderFolder.create();
 
