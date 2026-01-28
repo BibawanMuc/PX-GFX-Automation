@@ -1,0 +1,37 @@
+Report created: 
+	1/27/2026	2:47:25 PM
+
+Project name: 13thStreet_Promo_Toolkit_MASTER_ENG_2020_MWa_Auto 61 (converted).aep
+
+Source files collected to: 
+	D:\PX KI Event\PROJECT\CODE\260126 GFX Automationen\_AE Projekte\13thStreet_Promo_Toolkit_MASTER_ENG_20206
+
+Source files collected: For all comps
+
+Collected comps:  
+	
+Number of collected files:  0
+
+Size of collected files:  0 KB
+
+Effects used:  7
+
+Effect:  CC Toner
+	
+Effect:  Checkbox Control
+	
+Effect:  Color Control
+	
+Effect:  Fill
+	
+Effect:  Linear Wipe
+	
+Effect:  Slider Control
+	
+Effect:  Stroke
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “NudistaScar”, Font style: “Bold”
+

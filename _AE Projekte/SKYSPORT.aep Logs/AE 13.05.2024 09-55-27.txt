@@ -1,0 +1,27 @@
+Adobe After Effects v24.0.2 Windows 64 render log for project “SKYSPORT.aep”
+
+Rendering started on 13.05.2024 at 09:55:27
+
+  13.05.2024 09:55:27: Starting composition “SkySport_Volleyball_Bundesliga der Frauen_DONNERSTAG 20:15 UHR”.
+
+  Output To: E:\___GFX_AUTOMATION\_Render\SkyAutomate\SkySport_Volleyball_Bundesliga der Frauen_DONNERSTAG 20-15 UHR.mp4    13.05.2024 09:58:10: Finished composition “SkySport_Volleyball_Bundesliga der Frauen_DONNERSTAG 20:15 UHR”.
+
+
+  13.05.2024 09:58:11: Starting composition “SkySport_Volleyball_Bundesliga der Frauen_MORGEN 20:15 UHR”.
+
+  Output To: E:\___GFX_AUTOMATION\_Render\SkyAutomate\SkySport_Volleyball_Bundesliga der Frauen_MORGEN 20-15 UHR.mp4    13.05.2024 10:00:38: Finished composition “SkySport_Volleyball_Bundesliga der Frauen_MORGEN 20:15 UHR”.
+
+
+  13.05.2024 10:00:38: Starting composition “SkySport_Volleyball_Bundesliga der Frauen_HEUTE 20:15 UHR”.
+
+  Output To: E:\___GFX_AUTOMATION\_Render\SkyAutomate\SkySport_Volleyball_Bundesliga der Frauen_HEUTE 20-15 UHR.mp4    13.05.2024 10:03:04: Finished composition “SkySport_Volleyball_Bundesliga der Frauen_HEUTE 20:15 UHR”.
+
+
+  13.05.2024 10:03:04: Starting composition “SkySport_Volleyball_Bundesliga der Frauen_GLEICH”.
+
+  Output To: E:\___GFX_AUTOMATION\_Render\SkyAutomate\SkySport_Volleyball_Bundesliga der Frauen_GLEICH.mp4    13.05.2024 10:05:35: Finished composition “SkySport_Volleyball_Bundesliga der Frauen_GLEICH”.
+
+
+  Total Time Elapsed: 10 Min, 8 Sec
+Log closed on 13.05.2024 at 10:05:35
+

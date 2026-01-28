@@ -1,0 +1,27 @@
+Adobe After Effects v24.3 Windows 64 render log for project “SYFY.aep”
+
+Rendering started on 08.05.2024 at 10:09:10
+
+  08.05.2024 10:09:10: Starting composition “SYFY_Scary Movie_Die Serie Season 2_Montag 17:20”.
+
+  Output To: D:\___GFX_AUTOMATION\_Render\SYFY_Scary Movie_Die Serie Season 2_Montag 17-20.mov    08.05.2024 10:09:22: Finished composition “SYFY_Scary Movie_Die Serie Season 2_Montag 17:20”.
+
+
+  08.05.2024 10:09:22: Starting composition “SYFY_Scary Movie_Die Serie Season 2_Morgen 17:20”.
+
+  Output To: D:\___GFX_AUTOMATION\_Render\SYFY_Scary Movie_Die Serie Season 2_Morgen 17-20.mov    08.05.2024 10:09:33: Finished composition “SYFY_Scary Movie_Die Serie Season 2_Morgen 17:20”.
+
+
+  08.05.2024 10:09:33: Starting composition “SYFY_Scary Movie_Die Serie Season 2_HEUTE 17:20”.
+
+  Output To: D:\___GFX_AUTOMATION\_Render\SYFY_Scary Movie_Die Serie Season 2_HEUTE 17-20.mov    08.05.2024 10:09:46: Finished composition “SYFY_Scary Movie_Die Serie Season 2_HEUTE 17:20”.
+
+
+  08.05.2024 10:09:46: Starting composition “SYFY_Scary Movie_Die Serie Season 2_GLEICH”.
+
+  Output To: D:\___GFX_AUTOMATION\_Render\SYFY_Scary Movie_Die Serie Season 2_GLEICH.mov    08.05.2024 10:09:59: Finished composition “SYFY_Scary Movie_Die Serie Season 2_GLEICH”.
+
+
+  Total Time Elapsed: 49 Seconds
+Log closed on 08.05.2024 at 10:09:59
+

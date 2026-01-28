@@ -1,0 +1,22 @@
+Adobe After Effects v26.0 Windows 64 render log for project “SYFY.aep”
+
+Rendering started on 1/28/2026 at 11:37:57 AM
+
+  1/28/2026 11:37:57 AM: Starting composition “SYFY_FILM A_TEIL B_HEUTE 2015”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\CODE3\dashboard\_Renderings\SYFY_FILM A_TEIL B_HEUTE 2015.mp4    1/28/2026 11:38:05 AM: Finished composition “SYFY_FILM A_TEIL B_HEUTE 2015”.
+
+
+  1/28/2026 11:38:05 AM: Starting composition “SYFY_FILM A_TEIL B_MORGEN 2015”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\CODE3\dashboard\_Renderings\SYFY_FILM A_TEIL B_MORGEN 2015.mp4    1/28/2026 11:38:15 AM: Finished composition “SYFY_FILM A_TEIL B_MORGEN 2015”.
+
+
+  1/28/2026 11:38:15 AM: Starting composition “SYFY_FILM A_TEIL B_GLEICH 2015”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\CODE3\dashboard\_Renderings\SYFY_FILM A_TEIL B_GLEICH 2015.mp4    1/28/2026 11:38:24 AM: Finished composition “SYFY_FILM A_TEIL B_GLEICH 2015”.
+
+
+  Total Time Elapsed: 26 Seconds
+Log closed on 1/28/2026 at 11:38:24 AM
+

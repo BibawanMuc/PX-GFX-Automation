@@ -1,0 +1,27 @@
+Adobe After Effects v24.0.3 Windows 64 Renderprotokoll für Projekt 'SKYSPORT.aep'
+
+Rendervorgang gestartet am 10.07.2024 um 15:26:27
+
+  10.07.2024 15:26:27: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_SONNTAG 19:25' gestartet.
+
+  Speichern unter: E:\PX-GFX-Automation\_Render\SkySport_Volleyball_Bundesliga der Frauen_SONNTAG 19-25.mov    10.07.2024 15:27:32: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_SONNTAG 19:25' beendet.
+
+
+  10.07.2024 15:27:32: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_MORGEN 19:25' gestartet.
+
+  Speichern unter: E:\PX-GFX-Automation\_Render\SkySport_Volleyball_Bundesliga der Frauen_MORGEN 19-25.mov    10.07.2024 15:28:34: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_MORGEN 19:25' beendet.
+
+
+  10.07.2024 15:28:35: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_HEUTE 19:25' gestartet.
+
+  Speichern unter: E:\PX-GFX-Automation\_Render\SkySport_Volleyball_Bundesliga der Frauen_HEUTE 19-25.mov    10.07.2024 15:29:40: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_HEUTE 19:25' beendet.
+
+
+  10.07.2024 15:29:40: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_GLEICH ' gestartet.
+
+  Speichern unter: E:\PX-GFX-Automation\_Render\SkySport_Volleyball_Bundesliga der Frauen_GLEICH.mov    10.07.2024 15:30:43: Komposition 'SkySport_Volleyball_Bundesliga der Frauen_GLEICH ' beendet.
+
+
+  Bish. Renderz.: 4 Min., 16 Sek.
+Das Protokoll wurde am 10.07.2024 um 15:30:43 geschlossen.
+

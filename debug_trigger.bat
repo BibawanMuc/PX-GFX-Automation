@@ -1,0 +1,13 @@
+@echo off
+echo Debug Trigger Started...
+echo.
+echo Changing directory to AE folder...
+cd /d "C:\Program Files\Adobe\Adobe After Effects 2026\Support Files"
+
+echo.
+echo Triggering Script...
+AfterFX.exe -r "d:\PX KI Event\PROJECT\CODE\GFX_LINK\CODE3\dashboard\scripts\px_automate.jsx"
+
+echo.
+echo Done. Pause to check output...
+pause

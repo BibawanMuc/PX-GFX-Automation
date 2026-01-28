@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+  
+  /* Tech Theme Vars */
+  --tech-dark: #050505;
+  --tech-surface: #121212;
+  --tech-surface-highlight: #1e1e1e;
+  --tech-cyan: #00f3ff;
+  --tech-purple: #bc13fe;
+  --tech-green: #0aff00;
+  --tech-dim: #4a4a4a;
+  --tech-border: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  --color-tech-dark: var(--tech-dark);
+  --color-tech-surface: var(--tech-surface);
+  --color-tech-surface-highlight: var(--tech-surface-highlight);
+  --color-tech-cyan: var(--tech-cyan);
+  --color-tech-purple: var(--tech-purple);
+  --color-tech-green: var(--tech-green);
+  --color-tech-dim: var(--tech-dim);
+  --color-tech-border: var(--tech-border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Custom Utilities for Neon Effects */
+@layer utilities {
+  .neon-border-cyan {
+    box-shadow: 0 0 5px var(--tech-cyan), 0 0 10px var(--tech-cyan);
+    border: 1px solid var(--tech-cyan);
+  }
+  .neon-text-cyan {
+    text-shadow: 0 0 5px var(--tech-cyan);
+  }
+}

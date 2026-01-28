@@ -1,0 +1,83 @@
+Report created: 
+	1/27/2026	2:48:20 PM
+
+Project name: Untitled Project.aep
+
+Source files collected to: 
+	D:\PX KI Event\PROJECT\CODE\260126 GFX Automationen\_AE Projekte\SYFY_2026
+
+Source files collected: For all comps
+
+Collected comps:  
+	EB_1line_Info
+	EB_KeyArt_Cut_Logo
+	EB_KeyArt_Slide_Logo
+	EB_2lineA_Info
+	EB_2lineB_Info
+	EB_3lineA_Info
+	Opener_Highlight
+	EB_3lineB_Info
+	EB_4lineA_Info
+	SYFY_Guide_Endpage_Toolkit
+	BB_2line_1part
+	BB_2line_2part
+	BB_socialpart
+	EB_4lineB_Info
+	Closer_Button
+	GUIDE_Layout_A_1-Line
+	GUIDE_Layout_B_2-Line
+	GUIDE_Layout_C_Franchise_2-Line
+	GUIDE_Layout_D_Franchise_3-Line
+	GUIDE_Layout_F_Combo_3-Line
+	GUIDE_Layout_G_Franchise_4-Line
+	__FARBEN_UND_CO
+	EB_KeyArt_Cut
+	EB_KeyArt_Slide
+	EB_1line
+	EB_2lineA
+	EB_2lineB
+	EB_3lineA
+	EB_3lineB
+	EB_4lineA
+	EB_4lineB
+	BB_1lineA
+	BB_1lineB
+	BB_1lineC
+	TT_links
+	TT_rechts
+	SYFY_Original_Logo1
+	Opener_Original
+	SYFY_Original_Logo4
+	Opener_Special
+	SYFY_Original_Logo3
+	Opener_Premiere
+	SYFY_Original_Logo2
+	
+Number of collected files:  2
+
+Size of collected files:  1,7 MB
+
+Collected source files: 
+	G:\01 Projekte\Sky\SYFY\00_Automation\SYFY_All_Automated\(Footage)\Footage\SYFY_HORIZONTAL_Logo_050917_HDlockup.ai
+	G:\01 Projekte\Sky\SYFY\00_Automation\SYFY_All_Automated\(Footage)\Footage\SYFY_VOD_Open_Original_5sec.wav
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  5
+
+Effect:  Checkbox Control
+	
+Effect:  Fill
+	
+Effect:  Set Matte
+	
+Effect:  Tint
+	
+Effect:  Venetian Blinds
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “GTCinetypeSyfy”, Font style: “Regular”
+

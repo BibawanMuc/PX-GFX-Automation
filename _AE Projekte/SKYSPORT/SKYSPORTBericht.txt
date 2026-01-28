@@ -1,0 +1,114 @@
+Bericht erstellt: 
+	12.07.2024	19:58:29
+
+Projektname: SKYSPORT.aep
+
+Quelldateien gesammelt in: 
+	E:\PX-GFX-Automation\collected\_AE Projekte\SKYSPORT
+
+Quelldateien gesammelt: Alle
+
+Gesammelte Kompositionen:  
+	SkySport_25er
+	LogoBug
+	Opener_Bug
+	Lowerthird 01
+	Pre Video
+	Pre Packshot
+	Image 01
+	Image 05
+	text 01
+	text 02
+	text 05 Titel1
+	text 06 TuneIn
+	all
+	all
+	Image 01 Comp 1
+	lights.jpg Comp 2
+	lights.jpg Comp 3
+	all 9
+	all 10
+	matte
+	matte 2
+	matte 3
+	shot01__object_1
+	shot01__object_3
+	lights.jpg Comp 10
+	lights.jpg Comp 11
+	matte 13
+	matte 14
+	matte 15
+	text compTuneIn
+	text compTitel1
+	text compTitel2
+	text 05
+	shot01__object_15
+	shot01__object_16
+	text  text comp 4
+	text comp 6
+	text  text comp 6
+	text 05 Titel2
+	
+Anzahl der gesammelten Dateien:  21
+
+Größe der gesammelten Dateien:  128 MB
+
+Gesammelte Quelldateien: 
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\A_lowerthirdone_matte.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\blue_streak_02.jpg
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\flare_1.png
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\lights01.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\LOWERLIGHT011.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\lowerthirdone\lowerthirdone.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_1.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_2.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_3.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_4.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_5.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01__object_6.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\shot01_volumelight.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_1.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_2.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_3.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_4.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_5.mov
+	E:\PX-GFX-Automation\MA\Sport-package\After Effects\(Footage)\Motion Array\03. Others\Special Passes\lowerthirdone_object_6.mov
+	E:\PX-GFX-Automation\TO AE\Sky_Sport_-_Logo_2020.png
+	
+Anzahl der fehlenden Elemente: 1
+
+Render-Plug-in:
+	Klassisch 3D
+	
+Verwendete Effekte: 12
+
+Effekt:  Blendenflecke
+	
+Effekt:  CC Ball Action
+	
+Effekt:  CC RepeTile
+	
+Effekt:  CC Toner
+	
+Effekt:  Einstellungen für Farben
+	
+Effekt:  Farbton/Sättigung
+	
+Effekt:  Leuchten
+	
+Effekt:  Luminanz-Key
+	
+Effekt:  Maske füllen
+	
+Effekt:  Rauschen HLS
+	
+Effekt:  Schneller Weichzeichner (veraltet)
+	
+Effekt:  Tonwertkorrektur
+	
+
+Ebene:  Textebene
+	Externe Abhängigkeiten:  
+		Schriftfamilie: „Sky Text“, Schrift: „Bold“
+

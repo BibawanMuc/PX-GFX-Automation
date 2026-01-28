@@ -1,0 +1,22 @@
+Adobe After Effects v26.0 Windows 64 render log for project “SYFY.aep”
+
+Rendering started on 1/28/2026 at 11:13:50 AM
+
+  1/28/2026 11:13:50 AM: Starting composition “SYFY_WARUM GEHST_DU NICHT_HEUTE 1212”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\_AE Projekte\SYFY_WARUM GEHST_DU NICHT_HEUTE 1212.mp4    1/28/2026 11:13:58 AM: Finished composition “SYFY_WARUM GEHST_DU NICHT_HEUTE 1212”.
+
+
+  1/28/2026 11:13:58 AM: Starting composition “SYFY_WARUM GEHST_DU NICHT_MORGEN 1212”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\_AE Projekte\SYFY_WARUM GEHST_DU NICHT_MORGEN 1212.mp4    1/28/2026 11:14:07 AM: Finished composition “SYFY_WARUM GEHST_DU NICHT_MORGEN 1212”.
+
+
+  1/28/2026 11:14:07 AM: Starting composition “SYFY_WARUM GEHST_DU NICHT_GLEICH 1212”.
+
+  Output To: D:\PX KI Event\PROJECT\CODE\GFX_LINK\_AE Projekte\SYFY_WARUM GEHST_DU NICHT_GLEICH 1212.mp4    1/28/2026 11:14:17 AM: Finished composition “SYFY_WARUM GEHST_DU NICHT_GLEICH 1212”.
+
+
+  Total Time Elapsed: 26 Seconds
+Log closed on 1/28/2026 at 11:14:17 AM
+
