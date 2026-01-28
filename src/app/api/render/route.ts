@@ -58,7 +58,11 @@ export async function POST(request: Request) {
         // 3. Write to Temp File inside dashboard/tmp (Use first ID for filename to keep it simple, or a unique batch ID)
         // We'll use the timestamp + first ID to ensure uniqueness if needed, or just job_BATCH_FirstID
         const mainJobId = jobIds[0]
-        const tsvPath = `${SAFE_BASE}\\tmp\\batch_${mainJobId}.txt`
+        const tsvPath = path.join(SAFE_BASE, 'tmp', `batch_${mainJobId}.txt`)
+
+        // Ensure tmp directory exists
+        await fs.mkdir(path.dirname(tsvPath), { recursive: true })
+
         await fs.writeFile(tsvPath, fileContent, 'utf-8')
 
         // 4. Update Status for ALL jobs
@@ -69,7 +73,7 @@ export async function POST(request: Request) {
 
         // 5. Generate Wrapper Script
         // Script is now in dashboard/scripts
-        const scriptPath = `${SAFE_BASE}\\scripts\\px_automate.jsx`
+        const scriptPath = path.join(SAFE_BASE, 'scripts', 'px_automate.jsx')
         const escapedTsvPath = tsvPath.replace(/\\/g, '/')
         const escapedScriptPath = scriptPath.replace(/\\/g, '/')
 
@@ -77,7 +81,7 @@ export async function POST(request: Request) {
 var GLOBAL_DASHBOARD_PATH = "${SAFE_BASE.replace(/\\/g, '/')}";
 // @include "${escapedScriptPath}"
 `
-        const wrapperPath = `${SAFE_BASE}\\tmp\\run_batch_${mainJobId}.jsx`
+        const wrapperPath = path.join(SAFE_BASE, 'tmp', `run_batch_${mainJobId}.jsx`)
         await fs.writeFile(wrapperPath, wrapperContent, 'utf-8')
 
         // 6. PYTHON LAUNCHER STRATEGY
